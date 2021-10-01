@@ -1,0 +1,1083 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;600;700&display=swap');
+*{
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    background: #0e0e0e;
+}
+.profaile,
+.content ,
+.sidebare{
+    background-color: hsl(223deg 10% 14%);
+}
+
+/* Start Profaile */
+.profaile{
+    padding-right: 20px;
+    text-align: left;
+    color: white;
+    width: 70%!important;
+}
+#modal{
+        display: none;
+    }
+@media(max-width: 1270px){
+    #profail{
+        display: none;
+    }
+    #hiddenProfail,#hiddenslider{
+        display: none;
+    }
+    #slider{
+        display: none;
+    }
+    #slider navs ul li a i{
+        padding-left: 0px;
+    }
+    #modal{
+        display: block;
+    }
+    .profaile{
+        width: 100%!important;
+    }
+    .profaile .col-img img{
+        width: 100%!important;
+    }
+}
+
+@media(max-width: 992px) and (min-width: 767px){
+    .news-tiket{
+        margin-right: 50px;
+        justify-content: center;
+        
+    }
+}
+
+@media(max-width: 767px){
+    .sm-media{
+        width: 100%;
+    }
+}
+
+.profaile .col{
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+}
+.profaile .col-img img{
+    border-radius: 50%;
+    width: 185%;
+}
+.clear{
+    clear: both;
+}
+.profaile .col p{
+    margin-right: -35px;
+    text-align: left;
+    font-weight: 600;
+    margin-left: -20px;
+}
+.profaile .col span{
+    font-size: 0.6em;
+    margin-right: -35px;
+    font-weight: 200;
+    color: hsl(0deg 0% 56%);
+}
+.profaile .col .horizontal .fa-expand {
+    font-size: 1.6em;
+    margin-left: -40px;
+    margin-top: -15px;
+    color: white;
+    border: 0;
+}
+.profaile .col .horizontal .fa-expand:active{
+    border: 0;
+}
+.profaile .bell{
+    background-color: hsl(324deg 80% 44%);
+    border-color: hsl(324deg 80% 44%);
+    border-radius: 13px;
+    padding: 4px 0px;
+}
+.profaile .bell:active{
+    background-color: hsl(324deg 80% 44%);
+    border-color: hsl(324deg 80% 44%);
+}
+.profaile .fa-bell{
+    background-color: #ffffff36;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.profaile .alert .close{
+    left: -8px;
+    top: -6px;
+}
+
+.profaile .alert{
+    padding: 0;
+    background-color: hsl(223deg 10% 22%);
+    color: white;
+    border: 0;
+    width: 110%;
+    margin-left: -9px;
+    border-radius: 15px;
+}
+.profaile .alert strong{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: .75rem 1.25rem;
+    color: inherit;
+    font-size: small;
+}
+.profaile .alert p{
+    padding-top: 10px;
+    color: #fefefe;
+    font-size: small;
+}
+.profaile .alert .close .x{
+    color: white!important;
+}
+
+.alert-footer{
+    padding:0px 19px 10px 19px;
+}
+.alert-footer span{
+    font-size: small;
+}
+.alert-footer i{
+    color: hsl(324deg 80% 44%);
+    cursor: pointer;
+}
+
+
+.message{
+    background-color: #c9a016!important;
+    border-color: #c9a016!important;
+}
+.supervisors img{
+    border-radius: 50%;
+}
+
+.copy{
+    color: #c9a016;
+    font-weight: 600;
+}
+
+/* End Profaile */
+
+/* Start Content */
+.search{
+    border-radius: 0px 0.3rem 0.3rem 0px!important;
+    background-color: transparent!important;
+    color: white!important;
+    padding-top: 15px!important;
+    background-color: hsl(223deg 10% 22%)!important;
+    line-height: 45px;
+    border: 0;
+}
+.input-search,
+.input-search:hover,
+.input-search:active,
+.input-search:focus{
+    background-color: hsl(223deg 10% 22%);
+    outline: 0;
+    outline-color: transparent;
+}
+
+
+/* Start Double Face */
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 230px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:enabled .flip-card-inner {
+   transform: rotateY(180deg);
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+}
+
+.flip-card-front, .flip-card-back {
+      width: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border: 3px solid #c9a016;
+    border-radius: 10px;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.double-face{
+    padding-left: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.double-face .nav .nav-link{
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+    font-size: smaller;
+}
+.double-face .nav .active{
+    background-color: azure!important;
+    color: black;
+}
+.count-users{
+    color: #c9a016;
+}
+
+.flip-card-inner .close i{
+    background-color: #702fb9!important;
+    border-radius: 20%;
+    color: white!important;
+    padding: 6px;
+}
+/* End Double Face */
+
+.bouquets{
+    border: 3px solid #c9a016;
+    border-radius: 10px;
+}
+
+
+.donut-chart {
+  position: relative;
+	width: 170px;
+    height: 170px;
+	border-radius: 100%
+ }
+p.center {
+  background: #202227;
+  position: absolute;
+  text-align: center;
+font-size: 28px;
+  top:0;left:0;bottom:0;right:0;
+  width: 85%;
+  height: 85%;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 35px;
+  padding: 20% 0 0;
+}
+	
+	
+.portion-block {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+.circle {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+	
+	
+#part1 {
+    transform: rotate(0deg);
+  }
+
+	#part1 .circle {
+		background-color: #0b5f84;
+		/*transform: rotate(76deg);*/
+		animation: first 1s 1 forwards;
+	  }
+	
+	
+#part2 {
+    transform: rotate(100deg);
+  }
+#part2 .circle {
+    background-color: #c59d16;
+    animation: second 1s 1 forwards 1s;
+  }
+#part3 {
+    transform: rotate(250deg);
+}
+	#part3 .circle {
+		background-color: #12a16b;
+		animation: third 0.5s 1 forwards 2s;
+	}
+	
+	
+/* Animation */
+@keyframes first {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(100deg);}
+}
+	
+@keyframes second {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(150deg);}
+}
+	
+@keyframes third {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(111deg);}
+}
+.img-soc img:first-child{
+    border: 3px solid #e2bb3a;
+    border-radius: 10px;
+}
+
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.carousel-indicators .active:active{
+    color: white;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: #2bc694;
+    padding: 15px 0px 15px 0px;
+    opacity: 1;
+    width: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 24px 0px #333;
+}
+.img-soc .pepsi img{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff
+}
+
+
+/* End Content */
+/* Srat (Said Bare) Nav Bare */
+
+.navs ul li{
+    border: 1px solid ;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: all .7s;
+}
+.navs ul li:hover,
+.navs ul li:active{
+    border: 1px solid #e2bb3a;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: hsl(223deg 10% 22%);
+}
+.navs ul .active{
+    border: 1px solid #e2bb3a;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: hsl(223deg 10% 22%);
+}
+.navs ul li a{
+    font-weight: 600;
+    color: white;
+}
+.navs ul li:hover a,
+.navs ul .active a,
+.navs ul .active a i,
+.navs ul li:hover a i{
+    color: #e2bb3a;
+}
+.navs ul li a i{
+    color: #a2a2a2;
+}
+
+/* End (Said Bare) Nav Bare */
+
+/************* Srta Champion Ships Page *************/
+.nav-tabs .nav-link{
+    margin: auto;
+    background-color: aliceblue;
+    width: 40%;
+    text-align: center;
+    border-bottom: 0;
+}
+.nav-tabs{
+    border-bottom: 0;
+}
+#nav-tabContent{
+    text-align: center;
+}
+#nav-tab .nav-link{
+    border: 0;
+    background-color: transparent;
+    color: #6a6a6a;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 20px;
+}
+#nav-tab .active{
+    background-color: hsl(223deg 10% 18%);
+    color: white;
+}
+.champlion .card{
+    border-radius: 0px 30px 0px 30px;
+    overflow: hidden;
+    border: 4px solid #e2bb3a;
+}
+.champlion .card hr{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 0; 
+    border-style: dashed;
+    border-width: 2px;
+    width: 20%;
+    transform: scaleX(2);
+}
+.alert-champlion{
+    background-color: #742a85;
+    color: white;
+}
+.champlion .card .card-body{
+    background-color: #14273b;
+    color: white!important;
+} 
+.champlion .card .card-body h5{
+    font-weight: 600;
+}
+.champlion .card .card-body p{
+    text-align: left;
+    line-height: .8em;
+    font-weight: 500;
+}
+.champlion .card .card-body p i{
+    font-weight: 200!important;
+}
+.champlion .card .card-footer{
+    background-color: #0a1521;
+}
+.champlion .card .pepsi{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff
+}
+.champlion .card .sign{
+    background-color: #313838;
+    color: #fff;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.champlion .card .choos{
+    background-color: #313838;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.champlion .card .update{
+    background-color: #313838;
+    color: #fff;
+    position: absolute;
+    left: 25px;
+    top: 52px;
+    padding: 7px 0px;
+    font-size: 16px;
+    font-weight: 200;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+}
+.champlion .card .update a{
+    text-decoration: none;
+    display: block;
+    padding: 7px 18px;
+    color: white;
+    font-weight: 600
+}
+.champlion .card .update a:hover{
+    color: #b5b5b5;
+}
+.champlion .card .update .fa-edit{
+    background-color: #742a85;
+    padding: 5px 7px 7px 5px;
+    border-radius: 5px;
+}
+.champlion .card .update .fa-trash{
+    background-color: #de1313;
+    padding: 5px 7px 7px 5px;
+    border-radius: 5px;
+}
+
+.btn-toolbar .btn-group a{
+    margin-left: 10px!important;
+    background-color: transparent;
+    border-color: #c9a016;
+    border-radius: 5px!important;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.btn-toolbar .btn-group .active{
+    background-color: #c9a016!important;
+    transform: scale(1.2);
+}
+.btn-toolbar .btn-group a:active,
+.btn-toolbar .btn-group a:hover{
+    background-color: #c9a016!important;
+    border-color: #c9a016;
+    transform: scale(1.2);
+    transition: all .3s;
+}
+
+
+/* Start Result */
+
+.table-bordered td,
+.table-bordered th,
+.table-bordered tbody tr{
+    border: 3px solid transparent;
+    border-top: 1px solid transparent;
+    border-left: 3px solid #c9a016;
+    border-radius: 20px!important
+}
+.table-bordered thead{
+    border-top: 0px solid !important;
+    line-height: 44px;
+}
+.table_border{
+    border: 4px solid #c9a016!important;
+    border-left: 2px solid #c9a016!important;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.table{
+    border-top: 10px solid transparent;
+}
+.table .fa-trash{
+    background-color: #de1313;
+    padding: 10px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+}
+.table .fa-edit{
+    background-color: #742a85;
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+}
+
+/* Start Add ChamlionShip */
+.Back,
+.Back:hover{
+    color: #c9a016;
+    text-decoration: none;
+}
+.Back p{
+    margin-bottom: 15px;
+}
+
+.img_input{
+    position: absolute;
+    width: 90%;
+    background-color: hsl(223deg 10% 22%);
+    border-radius: 10px;
+}
+
+form .img_input input{
+      position: absolute;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      opacity: 0;
+    cursor: pointer;
+}
+.bg-transparent{
+    width: 100%;
+    height: 100%;
+}
+
+.img_champ{
+    font-weight: 600;
+    font-size: 19px;
+}
+.form-control,
+.form-control:focus{
+    background-color: hsl(223deg 10% 22%);
+    border-color: #3b3b3b;
+    height: 70px;
+    color: white;
+}
+.public_btn a{
+    background-color: #742a85;
+    border-color: #742a85;
+}
+
+
+
+
+/* End Add ChamlionShip */
+/* End Result */
+
+
+/************* End Champion Ships Page  ************/
+/************* Start News Page  ********************/
+
+
+
+#radios label {
+    cursor: pointer;
+    margin-left:10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + span {
+    color: #fff;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    padding: 15px 35px;
+    border-radius: 10px;
+    background-color: hsl(223deg 10% 22%);
+}
+
+input[type="radio"]:checked + span {
+  background-color: #742a85;
+}
+
+
+.sliders{
+    border-radius: 20px;
+    box-shadow: 0px 20px 21px #00000047;
+    border: 2px solid #00000047;
+}
+.sliders .btn{
+    padding: 10px 35px;
+    background-color: tomato;
+    border: 1px #0000a3;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.3em;
+    transition: all 1s;
+    position: relative;
+    top: 10px;
+    right: -90px;
+}
+.champlion .dot{
+    position: absolute;
+    bottom: -40px;
+    margin: auto;
+}
+.champlion .dot .active{
+    width: 60px;
+    border-radius: 15px;
+    background-color: #e2bb3a!important;
+}
+
+.text-slider{
+    top: 25%;
+    right: 55%;
+    margin-left: -45px;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: 600;
+}
+.layout{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.sliders_icon .choos{
+    background-color: #313838;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.sliders_icon .update{
+    background-color: #313838;
+    color: #fff;
+    position: absolute;
+    left: 25px;
+    top: 52px;
+    padding: 7px 0px;
+    font-size: 16px;
+    font-weight: 200;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+    z-index: 9;
+}
+.sliders_icon .update a{
+    text-decoration: none;
+    display: block;
+    padding: 7px 18px;
+    color: white;
+    font-weight: 600
+}
+.sliders_icon .update a:hover{
+    color: #b5b5b5;
+}
+.sliders_icon .update .fa-edit{
+    background-color: #742a85;
+    padding: 5px 7px 7px 5px;
+    border-radius: 5px;
+}
+.sliders_icon .update .fa-trash{
+    background-color: #de1313;
+    padding: 5px 7px 7px 5px;
+    border-radius: 5px;
+}
+
+
+.slider-products .carousel-control-prev,
+.slider-products .carousel-control-next{
+    background-color: rgba(0,0,0,0.7);
+    opacity: 1;
+    width: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 24px 0px #333;
+    height: 15%;
+    top: 40%;
+    display: none;
+}
+.slider-products:hover .carousel-control-prev,
+.slider-products:hover .carousel-control-next{
+    display: block;
+}
+.slider-products .carousel-control-next{
+    right: 0px;
+}
+.slider-products .card{
+    position: relative;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0;
+}
+.slider-products .card .card-body{
+    position: absolute;
+    color: white;
+    background-color: #14273b;
+    bottom: 10px;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: right;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.slider-products .card img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.slider-products .card .choos{
+    background-color: #313838;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.slider-products .card .update{
+    background-color: #313838;
+    color: #fff;
+    position: absolute;
+    left: 25px;
+    top: 52px;
+    padding: 7px 0px;
+    font-size: 16px;
+    font-weight: 200;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+}
+.slider-products .card .update a{
+    text-decoration: none;
+    display: block;
+    padding: 7px 18px;
+    color: white;
+    font-weight: 600
+}
+.slider-products .card .update a:hover{
+    color: #b5b5b5;
+}
+.slider-products .card .update .fa-edit{
+    background-color: #742a85;
+    padding: 5px 7px 7px 5px;
+    border-radius: 5px;
+}
+.slider-products .card .update .fa-trash{
+    background-color: #de1313;
+    padding: 5px 7px 7px 5px;
+    border-radius: 5px;
+}
+
+.slider-poster .carousel-inner{
+    height: 200px;
+}
+.slider-poster img{
+    width: 100%;
+    height: 100%;
+}
+.slider-poster .carousel-control-prev,
+.slider-poster .carousel-control-next{
+    background-color: rgba(0,0,0,0.7);
+    opacity: 1;
+    width: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 24px 0px #333;
+    height: 25%;
+    top: 40%;
+    border-radius: 50%;
+    background-color: #e2bb3a;
+    color: black!important;
+    font-size: 1.2em;
+}
+.slider-poster .carousel-control-prev span,
+.slider-poster .carousel-control-next span{
+    color: black!important;
+}
+
+
+
+/************* End News Page  ************/
+/************* End Ads Page  ************/
+
+
+/************* Srat Packages Page  ************/
+
+.packages .card{
+    border-radius: 0px 30px 0px 15px;
+    background-color: transparent;
+}
+.packages .card .card-header{
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    border: 0;
+}
+.packages .card hr{
+    border: 0;
+    border-style: solid;
+    border-width: 1px;
+    width: 13%;
+    transform: scaleX(2);
+    margin: auto;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+.packages .card h3{
+    background-color: #0b5f84;
+    width: 110%;
+}
+.packages .card small{
+    font-size: 13px;
+}
+.packages .card .card-body{
+    background-color: transparent;
+}
+.packages .card .card-body h5{
+    line-height: 1.5em;
+    font-weight: 600;
+}
+.packages .card .card-footer{
+    padding-left: 0;
+    border: 0;
+}
+.packages .card .card-footer .i-card1{
+    background-color: #0b5f84;
+}
+.packages .card .card-footer .i-card2{
+    background-color: #c59d16;
+}
+.packages .card .card-footer .i-card3{
+    background-color: #12a16b;
+}
+.p-card1{
+    color: #0b5f84;
+    margin-top: 10px;
+}
+.p-card2{
+    color: #c59d16;
+    margin-top: 10px;
+}
+.p-card3{
+    color: #12a16b;
+    margin-top: 10px;
+}
+
+/************* End Packages Page  ************/
+/************* Start Teams Page  ************/
+.details{
+    line-height: 40px;
+    text-align: left;
+}
+.details a{
+    text-decoration: none;
+    color: #c59d16;
+    text-align: left;
+}
+.card-bg{
+    background-color: hsl(223deg 10% 22%);
+    border: 10px solid #202227;
+    border-radius: 20px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.table_border-update{
+    border: 0!important;
+}
+.table_border-update td,
+.table_border-update th,
+.table_border-update tbody tr,
+.table_border-update tbody{
+    border-left: 0!important;
+}
+
+/************* End Teams Page  ************/
+/************* Start Members Page  ************/
+
+.members img{
+    border: 3px solid #e2bb3a;
+    border-radius: 50%;
+}
+
+.members .choos{
+    background-color: #313838;
+    color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.members .update{
+    background-color: #313838;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    padding: 4px 0px;
+    font-size: 16px;
+    font-weight: 200;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+}
+.members .update a{
+    text-decoration: none;
+    display: block;
+    padding: 7px 18px;
+    color: white;
+    font-weight: 600
+}
+.members .update a:hover{
+    color: #b5b5b5;
+}
+.members .update .fa-edit{
+    background-color: #742a85;
+    padding: 5px 7px 7px 5px;
+    border-radius: 5px;
+}
+.members .update .fa-trash{
+    background-color: #de1313;
+    padding: 5px 7px 7px 5px;
+    border-radius: 5px;
+}
+
+.img-member{
+    border-radius: 50%!important;
+}
+
+.img-member .img_input {
+    position: absolute;
+    width: 200px; 
+    background-color: hsl(223deg 10% 22%);
+    border-radius: 50%;
+    /* height: 300px; */
+    padding: 50px;
+    margin: 40px;
+}
+
+#nav-profile img{
+    border-radius: 50%;
+}
+/************* End Memebers Page  ************/
+
+
+
+
+
+
+
+
+
+
+
+

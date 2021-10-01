@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+     SVG Symbol Icons | Nucleo
+    </title>
+   </head>
+   <body class="">
+    <ul>
+     <li>
+      <div class="svg-wrapper">
+       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve">
+        <g class="nc-icon-wrapper" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="#66615b" stroke="#66615b">
+         <polyline data-cap="butt" data-color="color-2" fill="none" stroke-miterlimit="10" points="14.858,21.142 22,14 31,22 " stroke-linecap="butt"/>
+         <polyline data-cap="butt" data-color="color-2" fill="none" stroke-miterlimit="10" points="1,25 10,17 18.501,24.249 " stroke-linecap="butt"/>
+         <rect x="1" y="3" fill="none" stroke="#66615b" stroke-miterlimit="10" width="30" height="26"/>
+         <circle data-color="color-2" fill="none" stroke-miterlimit="10" cx="14.5" cy="10.5" r="2.5"/>
+        </g>
+       </svg>
+      </div>
+      <p data-size="32" data-folder="/icons.svg">
+       &lt;svg class="icon icon-outline icon-stroke-2"&gt;&lt;use href="#icon-image" xlink:href="#icon-image"/&gt;&lt;/svg&gt;
+      </p>
+     </li>
+    </ul>
+    <style>
+     *, *::after, *::before { box-sizing: border-box;}
+html { font-size: 62.5%;} 
+body { font-size: 1.6rem; font-family: sans-serif; color: #333333; margin: 0; padding: 24px; background:#ffffff;}
+header {padding: 24px 0; display: flex; justify-content: center;}
+ul {list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;}
+ul li { padding: 32px 48px 48px; border-radius: .25em; cursor: pointer; transition: background 0.2s; position: relative; display: flex; justify-content: center; align-items: center;}
+ul li:hover { background: rgba(0,0,0,0.07);}
+.dark-background ul li:hover {background: rgba(255, 255, 255, 0.12);}
+ul p { font-size: 1.1rem; margin: 0; color: rgba(0, 0, 0, 0.8); -webkit-user-select: auto; -moz-user-select: auto; -ms-user-select: auto; user-select: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; position: absolute; bottom: 16px; left: 0; width: 100%; padding: 0 16px;} 
+.dark-background ul p { color: rgba(255,255,255,0.8);} 
+ul p::selection { background: rgba(0, 0, 0, 0.9); color: white;} 
+ul p::-moz-selection { background: rgba(0, 0, 0, 0.9); color: white;}
+.dark-background ul p::selection { background: #fff; color: rgba(0,0,0,0.9);} 
+.dark-background ul p::-moz-selection { background: #fff; color: rgba(0,0,0,0.9);} 
+.svg-wrapper svg{display:block; width: 32px; height: auto; max-height: 32px;}
+.external-reference p {margin: 0;}
+.external-reference label {font-size: 1.4rem;color: rgba(0,0,0,0.9);}
+.dark-background .external-reference label {color: #fff;}
+    </style>
+    <script>
+     function SelectText(element) {var doc = document , text = element , range, selection; if (doc.body.createTextRange) { range = document.body.createTextRange(); range.moveToElementText(text); range.select(); } else if (window.getSelection) { selection = window.getSelection(); range = document.createRange(); range.selectNodeContents(text); selection.removeAllRanges(); selection.addRange(range); }}window.onload = function() {var listItems = document.getElementsByTagName("li");for (var i = 0; i 
+    < listItems.length; i++) {listItems[i].onclick = function fun() {var item = this.getElementsByTagName("p");SelectText(item[0]);}}}</script>
+   </body>
+  </html>
